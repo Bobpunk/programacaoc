@@ -80,6 +80,9 @@ scanf("%d", &npt2 ) ;
 
 
 //saida carta 1
+float densp1 = pop1/area1 ;
+float pipc1 = pib1/pop1;
+
 
 printf("Carta 1:\n\n");
 printf("Estado: %c \n", est1);
@@ -89,11 +92,14 @@ printf("População: %d\n", pop1);
 printf("Área: %f\n" , area1);
 printf("PIB: %f\n", pib1);
 printf("Pontos Turisticos: %d\n", npt1);
+printf("A Densidade Populacional é: %f\n" , densp1) ;
+printf(" O PIB p/ Capita é: %f\n", pipc1 ) ;
 
 
 
 //saida carta 2
-
+float densp2 = pop1/area2 ;
+float pipc2 = pib2/pop2;
 printf("Carta 2:\n\n");
 printf("Estado: %c \n", est2);
 printf("Codigo: %c%s\n" , est2, codcar2 );
@@ -102,6 +108,8 @@ printf("População: %d\n", pop2);
 printf("Área: %f\n" , area2);
 printf("PIB: %f\n", pib2);
 printf("Pontos Turisticos: %d\n", npt2);
+printf("A Densidade Populacional é: %f\n" , densp2) ;
+printf(" O PIB p/ Capita é: %f\n", pipc2 ) ;
 
 
 return 0;
