@@ -98,7 +98,7 @@ printf(" O PIB p/ Capita é: %f\n", pipc1 ) ;
 
 
 //saida carta 2
-float densp2 = pop1/area2 ;
+float densp2 = pop2/area2 ;
 float pipc2 = pib2/pop2;
 printf("Carta 2:\n\n");
 printf("Estado: %c \n", est2);
@@ -110,6 +110,67 @@ printf("PIB: %f\n", pib2);
 printf("Pontos Turisticos: %d\n", npt2);
 printf("A Densidade Populacional é: %f\n" , densp2) ;
 printf(" O PIB p/ Capita é: %f\n", pipc2 ) ;
+
+
+
+//desafio 3 
+
+float superpodera , superpoderb;
+superpodera = (pop1 + area1 + npt1 + pipc1)+(1/densp1);
+superpoderb = (pop2 + area2 + npt2 + pipc2) + (1/densp2);
+
+printf(" o Super poder da carta a é:%f\n", superpodera);
+printf(" o Super poder da carta B é:%f\n", superpoderb);
+
+//comparação dos atributos
+
+printf("****Comparação das Cartas*****\n");
+printf("SE RESULTADO '1' 'CARTA 1' GANHA | SE RESULTADO '0' 'CARTA 2' GANHA \n");
+
+int resul_pop = pop1>pop2 ;
+
+        printf("\nAtributo população: \n");
+        printf(" Vencedor (1=carta 1, 0=carta2) ~~> %d\n" , resul_pop);
+
+int resul_area = area1>area2 ;
+
+        printf("\n Atributo Área: \n");
+         printf(" Vencedor (1=carta 1, 0=carta2) ~~> %d\n" , resul_area);
+
+int resul_pib = pib1>pib2;
+
+        printf("\n Atributo PIB: \n");
+         printf(" Vencedor (1=carta 1, 0=carta2) ~~> %d\n" , resul_pib);
+
+int resul_npt = npt1>npt2 ;
+
+        printf("\n Atributo Pontos Turisticos:\n");
+        printf(" Vencedor (1=carta 1, 0=carta2) ~~> %d\n" , resul_npt);
+
+int result_dens= densp1>densp2 ;
+
+        printf("\n Atributo Densidade Populacional:\n");
+        printf(" Vencedor (1=carta 1, 0=carta2) ~~> %d\n" , result_dens);
+
+int result_pippc = pipc1>pipc2 ;
+
+        printf("\n Atributo PIB p/ capita: \n" );
+        printf(" Vencedor (1=carta 1, 0=carta2) ~~> %d\n" , result_pippc);
+
+int resul_super_p = superpodera < superpoderb ;
+
+        printf("\n Atributo Superpoder: \n");
+         printf(" Vencedor (1=carta 1, 0=carta2) ~~> %d\n", resul_super_p);
+
+
+
+
+
+
+
+
+
+
 
 
 return 0;
